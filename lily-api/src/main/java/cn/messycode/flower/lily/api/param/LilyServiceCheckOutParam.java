@@ -5,7 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * 向Lily注册服务时的提交参数
+ * 向Lily下线服务时的提交参数
  *
  * @author simon
  */

@@ -10,6 +10,29 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>lily-service</artifactId>
+    <name>LILY SERVICE</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>cn.messycode.flower.lily</groupId>
+            <artifactId>lily-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>cn.messycode.tree</groupId>
+            <artifactId>locust-spring-boot-starter</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+    </dependencies>
 
 
 </project>
