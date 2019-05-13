@@ -30,4 +30,6 @@ public interface LilyService {
      * @return
      */
     ResponseDTO getServiceList(LilyServiceCheckOutParam param);
+
+    ResponseDTO getId();
 }

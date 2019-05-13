@@ -6,7 +6,8 @@ import cn.messycode.flower.lily.api.param.LilyServiceCheckInParam;
 import cn.messycode.flower.lily.api.param.LilyServiceCheckOutParam;
 import cn.messycode.tree.locust.annotation.LocustProvider;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.stereotype.Service;
+
+import java.util.UUID;
 
 /**
  * Lilyservice 功能实现
@@ -29,6 +30,17 @@ public class LilyServiceImpl implements LilyService {
     public ResponseDTO getServiceList(LilyServiceCheckOutParam param) {
         ResponseDTO dto = new ResponseDTO();
         dto.setCode(0);
+        return dto;
+    }
+
+    @Override
+    public ResponseDTO getId() {
+        ResponseDTO dto = new ResponseDTO();
+        dto.setCode(0);
+        String id = UUID.randomUUID().toString();
+        dto.setData(id);
+        log.info("get id:[{}]", id);
+
         return dto;
     }
 }
